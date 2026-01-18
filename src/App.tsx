@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { Login } from './pages/Login';
 import './App.css';
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* ログイン画面 */}
-          <Route path="/login" element={<div>Login Page</div>} />
+          <Route path="/login" element={<Login />} />
 
           {/* 認証後の画面 */}
           <Route path="/home" element={<div>Home Page</div>} />
